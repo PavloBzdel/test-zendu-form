@@ -1,0 +1,116 @@
+<section class="section-home">
+  <main class="main">
+    <div class="container">
+      <div class="main-title">Submissions</div>
+      <div class="main-inner">
+        <div class="search">
+          <img src="assets/icon/Search.svg" alt="icon search">
+          <input type="text" id="text" placeholder="Search...">
+        </div>
+        <div class="drop-down">
+          <div class="item">
+            <select name="form">
+              <option value="Select From">Select From</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+              <option value="BMW">BMW</option>
+            </select>
+          </div>
+          <div class="item">
+            <select name="form">
+              <option value="Select From">Select Status</option>
+              <option value="mercedes">Buy</option>
+              <option value="audi">Sell</option>
+            </select>
+          </div>
+          <div class="item">
+            <input type="date" name="date" id="date">
+          </div>
+        </div>
+        <div class="toggle">
+          <div class="toggle-box">
+            <div id="btn"></div>
+            <button (click)="leftClick()" type="button" class="toggle-btn">Map</button>
+            <button (click)="rightClick()" type="button" class="toggle-btn">List</button>
+          </div>
+        </div>
+        <div class="export">
+          <label for="file-upload" class="custom-file-upload">
+            <img src="assets/icon/Paper-Download.svg" alt=""> Export
+          </label>
+          <input id="file-upload" type="file"/>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
+
+<section class="home-info">
+  <main class="main">
+    <div class="container">
+      <div class="wrapper" id="map-list">
+        <div class="map-list-info">
+          <div class="list-container" *ngFor="let item of list">
+            <div class="item">
+              <div class="item-indicator">
+                <div><img [src]="item.icon" alt="{{item.icon}}"></div>
+                <div>{{item.indicator}}</div>
+              </div>
+              <div class="item-title">{{item.title}}</div>
+              <div class="item-from">
+                <div class="text">From:</div>
+                <div class="email">{{item.from}}</div>
+              </div>
+              <div class="item-to">
+                <div class="text">To:</div>
+                <div class="email">{{item.to}}</div>
+              </div>
+              <div class="item-date">
+                <div class="text">Due Date:</div>
+                <div class="date">{{item.dueDate}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-info">
+          <div #map id="map"></div>
+        </div>
+      </div>
+      <div class="list-info none" id="wrapper">
+        <div class="list-info-container">
+          <div class="list-info-wrapper">
+            <div class="info-title">Task</div>
+            <div class="info-title">Status</div>
+            <div class="info-title">From</div>
+            <div class="info-title">To</div>
+            <div class="info-title">Customer Address</div>
+            <div class="info-title">Due Date</div>
+          </div>
+          <div class="list-info-inner">
+            <div class="list-info-title">
+              <p>Work Flow: Requires Location</p>
+            </div>
+            <div class="list-info-title">
+              <div class="list-info-indicator">
+                <div><img src="assets/icon/info/green.svg" alt="gree ring"></div>
+                <div>Low Risk</div>
+              </div>
+            </div>
+            <div class="list-info-title">
+              <p>developer@gmail.com</p>
+            </div>
+            <div class="list-info-title">
+              <p>joboffer@gmail.com</p>
+            </div>
+            <div class="list-info-title">
+              <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+            </div>
+            <div class="list-info-title">
+              <p>03 December</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

@@ -1,0 +1,68 @@
+$white-color: #ffffff;
+$blue-color: #2188D9;
+$black-color: #060C1B;
+$light-red-color: rgba(255, 61, 0, 0.1);
+$red-color: #FF3D00;
+$light-green-color: #D7E5DA;
+$green-color: #53D86A;
+$light-gray-color: #ECECED;
+$gray-color: #B8B9BC;
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+// fonts
+
+.header-logo {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $gray-color
+}
+
+.email {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $red-color
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.custom-file-upload {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $blue-color;
+}

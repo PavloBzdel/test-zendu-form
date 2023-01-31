@@ -1,0 +1,221 @@
+@import "/src/scss/variable";
+
+.main-title {
+  padding: 32px 0;
+}
+
+.main-inner {
+  display: flex;
+}
+
+.search {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px $gray-color;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  input {
+    border: none;
+    height: 34px;
+  }
+}
+
+.drop-down {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+select,
+input {
+  display: flex;
+  padding: 10px 15px;
+  border: solid 1px $gray-color;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.toggle-box {
+  position: relative;
+  width: 152px;
+  margin-left: 100px;
+  background-color: $white-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-btn {
+  padding: 15px 26px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background: $blue-color;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.home-info {
+  padding: 20px 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .item {
+    position: relative;
+    width: 456px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: solid 1px $gray-color;
+    padding: 15px;
+
+    .item-indicator {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+    .item-from,
+    .item-to,
+    .item-date {
+      margin: 8px 0;
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  .map-info {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.list-container {
+  &:nth-child(2) {
+    .item-indicator {
+      padding: 4px 16px;
+      background-color: $light-green-color;
+      border-radius: 5px;
+      border: solid 1px $green-color;
+    }
+  }
+
+  &:nth-child(4) {
+    .item-indicator {
+      padding: 4px 16px;
+      background-color: $light-gray-color;
+      border-radius: 5px;
+      border: solid 1px $gray-color;
+    }
+  }
+
+  &:nth-child(2n+1) {
+    .item-indicator {
+      padding: 4px 16px;
+      background-color: $light-red-color;
+      border-radius: 5px;
+      border: solid 1px $red-color;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+
+.list-info{
+  margin-top: 50px;
+}
+.list-info-indicator {
+  padding: 4px 16px;
+  background-color: $light-green-color;
+  border-radius: 5px;
+  border: solid 1px $green-color;
+}
+
+.list-info-inner {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px $gray-color;
+}
+
+.list-info-indicator {
+  padding: 4px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+.list-info-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+}
+.list-info-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: solid 1px $gray-color;
+  border-bottom: none;
+}
+#map {
+  width: 800px;
+  height: 600px;
+}
+.export{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input[type="file"]{
+    display: none;
+  }
+  .custom-file-upload {
+    background-color: $white-color;
+    display: flex;
+    gap: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+}

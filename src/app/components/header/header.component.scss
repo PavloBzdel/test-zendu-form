@@ -1,0 +1,32 @@
+@import "/src/scss/variable";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white-color;
+}
+
+.nav {
+  display: flex;
+
+  a {
+    background-color: inherit;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 24px 15px;
+    color: $white-color
+  }
+}
+
+.header-icon {
+  img {
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+
+}
